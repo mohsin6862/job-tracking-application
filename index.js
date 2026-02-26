@@ -65,7 +65,7 @@ document.querySelector("main").addEventListener("click", function (event) {
   if (clickedElement.classList.contains("interview-btn")) {
     interviewSection.append(singleCard);
     status.innerHTML = `
-        <button class="inner-status bg-[#31dcb1] text-[#002C5C] font-bold px-5 py-2"> Applied</button>
+        <button class="inner-status bg-[#31dcb1] text-[#002C5C] font-bold px-5 py-2 rounded-md"> Applied</button>
         `;
     //  status.innerText="Applied";
     // countStat();
@@ -73,7 +73,7 @@ document.querySelector("main").addEventListener("click", function (event) {
   if (clickedElement.classList.contains("rejected-btn")) {
     rejectedSection.appendChild(singleCard);
     status.innerHTML = `
-        <button class="inner-status bg-[#ca4a05] text-white font-bold px-5 py-2"> Rejected</button>
+        <button class="inner-status bg-[#ca4a05] text-white font-bold px-5 py-2 rounded-md"> Rejected</button>
         `;
     // countStat();
   }
